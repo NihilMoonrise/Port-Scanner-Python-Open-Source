@@ -26,9 +26,9 @@ def scan_port(host, port):
 targeted_ports_scan = [1337, 4444, 8080]
 
 flagged_ports = {
-    1337: "Suspicious port",
-    4444: "A suspicious port",
-    8080: "Possible suspicious port but also usually used by servers"
+    1337: "Port usually used by classic backdoors (malware)",
+    4444: "A port usually used by malware and security researchers (Metasploit)",
+    8080: "Alternate web server or proxy port, USUALLY legitimate"
 }
 
 open_ports = []
